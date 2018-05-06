@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/GalaxyKit"]
+	path = Carthage/Checkouts/GalaxyKit
+	url = https://github.com/aranasaurus/GalaxyKit.git
