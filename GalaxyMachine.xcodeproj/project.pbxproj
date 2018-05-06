@@ -14,8 +14,25 @@
 		F9D01EE3209F7163004DBBA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D01EDE209F7163004DBBA6 /* ViewController.swift */; };
 		F9D01EE4209F7163004DBBA6 /* StarGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D01EE1209F7163004DBBA6 /* StarGeometry.swift */; };
 		F9D01EE5209F7163004DBBA6 /* SectorScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D01EE2209F7163004DBBA6 /* SectorScene.swift */; };
-		F9D01EEF209F7CCC004DBBA6 /* GalaxyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D01EE8209F7859004DBBA6 /* GalaxyKit.framework */; };
+		F9E64B0E209F86D1001DAD09 /* GalaxyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E64B0B209F86AF001DAD09 /* GalaxyKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9E64B0A209F86AF001DAD09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E64B05209F86AF001DAD09 /* GalaxyKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 942EFFA51EE9206400F69123;
+			remoteInfo = GalaxyKit;
+		};
+		F9E64B0C209F86AF001DAD09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E64B05209F86AF001DAD09 /* GalaxyKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 942EFFA01EE91E6F00F69123;
+			remoteInfo = GalaxyMachine;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F9D01EC7209F70CB004DBBA6 /* GalaxyMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalaxyMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +45,7 @@
 		F9D01EE1209F7163004DBBA6 /* StarGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarGeometry.swift; sourceTree = "<group>"; };
 		F9D01EE2209F7163004DBBA6 /* SectorScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectorScene.swift; sourceTree = "<group>"; };
 		F9D01EE8209F7859004DBBA6 /* GalaxyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GalaxyKit.framework; path = Carthage/Build/iOS/GalaxyKit.framework; sourceTree = "<group>"; };
+		F9E64B05209F86AF001DAD09 /* GalaxyKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GalaxyKit.xcodeproj; path = Carthage/Checkouts/GalaxyKit/GalaxyKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9D01EEF209F7CCC004DBBA6 /* GalaxyKit.framework in Frameworks */,
+				F9E64B0E209F86D1001DAD09 /* GalaxyKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +103,19 @@
 		F9D01EE7209F7859004DBBA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9E64B05209F86AF001DAD09 /* GalaxyKit.xcodeproj */,
 				F9D01EE8209F7859004DBBA6 /* GalaxyKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9E64B06209F86AF001DAD09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9E64B0B209F86AF001DAD09 /* GalaxyKit.framework */,
+				F9E64B0D209F86AF001DAD09 /* GalaxyMachine.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,12 +165,35 @@
 			mainGroup = F9D01EBE209F70CB004DBBA6;
 			productRefGroup = F9D01EC8209F70CB004DBBA6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F9E64B06209F86AF001DAD09 /* Products */;
+					ProjectRef = F9E64B05209F86AF001DAD09 /* GalaxyKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F9D01EC6209F70CB004DBBA6 /* GalaxyMachine */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F9E64B0B209F86AF001DAD09 /* GalaxyKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GalaxyKit.framework;
+			remoteRef = F9E64B0A209F86AF001DAD09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F9E64B0D209F86AF001DAD09 /* GalaxyMachine.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GalaxyMachine.app;
+			remoteRef = F9E64B0C209F86AF001DAD09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F9D01EC5209F70CB004DBBA6 /* Resources */ = {
@@ -172,7 +223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/usr/bin/env sh\n\nif ! command -v carthage > /dev/null; then\n  printf 'Carthage is not installed.\\n'\n  printf 'See https://github.com/Carthage/Carthage for install instructions.\\n'\n  exit 0\nfi\n\ncarthage outdated --xcode-warnings\ncarthage copy-frameworks";
+			shellScript = "#!/usr/bin/env sh\n\ncarthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -330,10 +381,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 356X99UH85;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -352,10 +399,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 356X99UH85;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
